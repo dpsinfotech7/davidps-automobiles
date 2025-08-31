@@ -1,0 +1,737 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background: linear-gradient(90deg, black, grey);
+    font-family: sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.979);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+header ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+header ul li a{
+    padding: 0 20px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header ul li a:hover{
+    font-size: 1.2em;
+    color: rgb(187, 17, 17);
+    transition: 0.5s ease-in-out;
+}
+
+header a .logo{
+    height: 300px;
+}
+
+header .hamburger{
+    display: none;
+}
+
+header #actions a{
+   text-decoration: none; 
+   padding: 0 20px 0;
+   color: rgb(255, 255, 255);
+   gap: 20px;
+   font-family: sans-serif;
+   font-weight: bold;
+}
+
+header #actions a img{
+    height: 15px;
+    padding: 0 2px 0;
+}
+
+.section1{
+    padding: 200px 0 0;
+}
+
+.section1{
+    width: 100%;
+    height: 650px;
+    background: url(/IMAGES/BACKG3);
+    background-size: cover;
+}
+
+.section1 #top{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    text-align: center;
+}
+
+.section1 .mid2{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px 0 0;
+}
+
+.section1 .mid1{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center;
+    padding: 15px 0 0;
+}
+
+.featuredcars{
+    padding: 0 20px 0;
+    display: flex;
+    background-color: rgb(153, 150, 150);
+}
+
+
+.h{
+    margin-top: 20px;
+    background-color: rgb(153, 150, 150);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bold;
+    padding: 30px 0 ; 
+}
+
+.card{
+    width: 400px;
+    background-size: cover;
+    border-radius: 30px;
+    background-color: rgb(114, 112, 112);
+    padding: 0 10px 0;
+    margin: 30px 30px;
+}
+
+.card:hover{
+    transition: 0.5s ease;
+    animation: up;
+    animation-duration: 1s;
+    box-shadow: 5px 5px 15px rgb(238, 42, 42);
+}
+
+.card img{
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.cardcontent{
+    padding: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.card-title{
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-price{
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: rgb(173, 28, 28);
+}
+
+.card-description{
+    line-height: 20px;
+    margin-bottom: 1em;
+}
+
+.card-link{
+    text-decoration: none;
+    padding: 10px 5px; 
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(163, 17, 17);
+    text-align: center;
+}
+
+.card-link:hover{
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+.seemore{
+    text-decoration: none;
+    color: rgb(173, 168, 168);
+    font-weight: bold;
+    font-size: 20px;
+    padding:500px 10px;
+    color: #ffffff;
+}
+
+.seemore:hover{
+    color: red;
+}
+
+.h2{
+    background-color: rgb(180, 179, 179);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bold;
+    padding: 50px 0 0; 
+}
+
+.services1{
+    display: flex;
+    background-color: rgb(180, 179, 179);
+    color: rgb(255, 255, 255);
+}
+
+.services-card{
+    background-color: rgb(88, 87, 87);
+    border-radius: 1em;
+    padding: 2.5em;
+    text-align: center;
+    box-shadow: 0 10px 25px rgb(0, 0, 0.5);
+    width: 400px;
+    margin: 30px 30px;
+    overflow: auto;
+}
+.services-card img{
+    height: 4em;
+    width: 4em;
+    margin-bottom: 1.5em;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.service-description {
+    color: #ffffff;
+}
+
+.about-content {
+    max-width: 56em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section-about{
+    font-family: sans-serif;
+    height: 300px;
+}
+
+.section-title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bolder;
+    padding: 40px 0 ;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.meetourteam{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 10px;
+    font-weight: 500;
+    border: 1px solid rgb(241, 51, 51);
+    border-radius: 10px;
+    background-color: rgb(241, 51, 51);
+}
+
+.meetourteam:hover{
+    background-color: red;
+}
+
+.section-dark{
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: rgb(88, 87, 87);
+    height: 600px;
+}
+
+.contact-form-container {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form-card {
+    background-color: #1f1f1f;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #cccccc;
+}
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: border-color 0.3s;
+}
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #ff3333;
+}
+.form-button {
+    width: 100%;
+    background-color: #ff3333;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.form-button:hover {
+    background-color: #e60000;
+    transform: translateY(-2px);
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.979);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+footer h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    height: 100px;
+    font-weight: bolder;
+    padding: 30px 0 10px;
+    font-size: 2em;
+}
+
+footer p{
+    font-size: 17px;
+    color: rgb(201, 196, 196);
+    padding: 5px 0 5px;
+}
+
+footer img{
+    height: 40px;
+    padding: 15px 5px 0;
+}
+
+footer .copy{
+    color: rgb(192, 187, 187);
+    padding: 40px 0 70px;
+    word-spacing: 0.5px;
+    font-size: 13px;
+}
+
+.sticky{
+    font-family: cursive;
+    background: rgba(0, 0, 0, 0.932);
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    text-align: center;
+    padding: 10px 10px 0;
+    border-radius: 10px;
+}
+
+
+.sticky a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.sticky img{
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cus-h{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bold;
+    padding: 50px 0 20px; 
+}
+.customer{
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.customer-card{
+    background-color: #14191f;
+    width: 33vw;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.customer-card img{
+    height: 29px;
+    border-radius: 50%;
+}
+
+.customer-card span{
+    font-size: 12px;
+    padding: 6px;
+}
+.customer-card p{
+    padding: 10px;
+    font-size: 15.5px;
+    letter-spacing: 0.1px;
+}
+.customer-card .m{
+    border-radius: 50%;
+    width: 10%;
+}
+.add{
+    margin:0 5px 0 auto;
+    padding: 5px;
+    background-color: rgb(75, 75, 122);
+    width: 130px;
+    font-family: cursive;
+    border-radius: 10px;
+}
+.add a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+@keyframes up{
+    80%{
+        transform: scale(1.05);
+    }
+}
+@media (max-width:1900px){
+    .section-about, .section-dark{
+        height: 50vh;
+    }
+    
+    .services-card{
+        height: 300px;
+    }
+    footer{
+        height: 65vh;
+    }
+    .section-dark{
+        height: 600px;
+    }
+}
+
+@media (max-width:1000px){
+    header ul li a{
+        padding: 0 5px 0;
+    }
+    header ul{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    header #actions a{
+        padding: 0 10px 0;
+        gap: 10px;
+    }
+    
+    header #actions a img{
+        padding: 0 1px 0;
+    }
+    .card img{
+        height: 200px;
+    }
+    .card{
+        padding: 0 3px 0;
+        width: 800px;
+        margin: 10px 10px;
+        height: 400px;
+        overflow: scroll;
+        background-size: cover;
+        border-radius: 30px;
+        background-color: rgb(114, 112, 112);
+        padding: 0 5px 0;
+    }
+    .card-link{
+        padding: 10px 5px; 
+        font-size: 12px;
+    }
+    .services-card{
+        border-radius: 1em;
+        padding: 2em;
+        text-align: center;
+        box-shadow: 0 10px 25px rgb(0, 0, 0.5);
+        width: 400px;
+        height: 30vh;
+        margin: 20px 20px;
+    }
+    .section1{
+        padding: 100px 0 0;
+    }
+    
+    .section1{
+        width: 100%;
+        height: 650px;
+        background: url(/IMAGES/BACKG3);
+        background-size: cover;
+    }
+    
+    .section1 #top{
+        padding: 20px 0;
+        font-size: 4em;
+    }
+    
+    .section1 .mid2{
+        font-size: 1.3em;
+        padding: 15px 0 0;
+    }
+    
+    .section1 .mid1{
+        font-size: 1.5em;
+        padding: 10px 0 0;
+    }
+    .section1{
+        background-position: center;
+    }
+    .sticky{
+        height: 150px;
+        width: 150px;
+        font-size: 10px;
+        padding: 10px 10px 0;
+    }
+    .sticky img{
+        height: 70px;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .section1 #top{
+        padding: 15px 0;
+        font-size: 3em;
+    }
+    .section1 .mid2{
+        font-size: 1.3em;
+        padding: 20px 0 0;
+        color: #ffffff;
+    }
+    .logo{
+        margin-right: -100px;
+    }
+    .customer-card p{
+        padding: 5px;
+    }
+    .section-about{
+        height: 350px;
+    }
+    
+}
+@media (max-width: 700px){
+    header{
+        justify-content: space-evenly;
+    }
+    header ul{
+        background-color: #1e1e1f;
+        padding: 100px 30px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: -1150%;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+        line-height: 50px;
+        transition: all 1.5s ease-in-out
+    }
+    
+    ul.show{
+        top: 0;
+    }
+    
+    header ul a{
+        font-size: 18px;
+        border-bottom: 1px solid gray;
+        width: 50vw;
+    }
+    
+    header .hamburger{
+        display: block;
+        z-index: 1;
+    }
+    .card{
+        height: 350px;
+    }
+    .card-link{
+        padding: 1;
+        font-size: 9px;
+    }
+    .logo{
+        margin: 0;
+    }
+    .cardcontent{
+        padding: 1em;
+    }
+    .services-card{
+        width: 300px;
+        height: 40.5vh;
+        padding: 1em;
+    }
+    .about-text{
+        color: rgb(185, 180, 180);
+    }
+    .services-card{
+        padding: 0.5em;
+        text-align: center;
+        box-shadow: 0 10px 25px rgb(0, 0, 0.5);
+        width: 400px;
+        margin: 10px 10px;
+    }
+    .section-about{
+        height: 400px;
+    }
+    .services1, .services{
+        margin:0 0 10px;
+        padding: 50px 0;
+    }
+    .section-about{
+        padding: 10px 0 0;
+        height: 500px;
+    }
+    .customer-card{
+        height: 300px;
+        overflow: auto;
+    }
+    .customer-card p{
+        padding: 2px 5px 0;
+    }
+    
+}
+@media (max-width: 590px){
+    
+    header #actions a{
+      padding: 0;
+      line-height: 30px;
+   }
+   
+   .hamburger{
+    padding: 10px;
+   }
+   .logo{
+    padding: 0;
+    margin: 0;
+   }
+    .featuredcars, .customer, .services1{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+    }
+    
+    header.mid2{
+        color: rgb(255, 255, 255);
+    }
+    .services1{
+        background-color: rgb(180, 179, 179);
+        height: 650px;
+        padding: 20px;
+    } 
+    .section-about{
+        height: 500px;
+    }
+    .customer-card, .services-card{
+        width: 90%;
+    }
+    .customer-card{
+        height: 150px;
+    }
+}
+@media (max-width: 499px){
+    .services1{
+        height: 700px;
+    }
+    .logo{
+        width: 200px;
+    }
+
+    .section1 #top{
+        padding-bottom: 15px;
+        font-size: 2em;
+}
+
+   .section1 .mid2{
+       font-size: 1em;
+       padding: 15px 0 0;
+}
+
+.section1 .mid1{
+       font-size: 1.5em;
+       padding: 5px 0 0;
+}
+}
+@media (max-width: 400px){
+     .card, .services-card{
+        width: 100%;
+        margin-left: 0;
+     }
+     .logo{
+        width: 200px;
+     }
+     .section-about{
+        height: 580px;
+     }
+    .about-content{
+        margin: 10px;
+    }
+    .sticky{
+    height: 130px;
+    width: 130px;
+    font-size: 9.5px;
+    padding: 10px 10px 0;
+}
+.sticky img{
+    height: 60px;
+}
+}
+
